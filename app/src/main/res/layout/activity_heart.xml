@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/heart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Heart">
+
+    <ImageView
+        android:id="@+id/card_place"
+        android:layout_width="411dp"
+        android:layout_height="382dp"
+        android:layout_marginBottom="68dp"
+        android:alpha="0.3"
+        android:background="#322549"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="281dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/hello"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toEndOf="@+id/imageView15"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/circle_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/gold"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/lv"
+        app:layout_constraintStart_toEndOf="@+id/lv"
+        app:layout_constraintTop_toTopOf="@+id/lv" />
+
+    <ImageView
+        android:id="@+id/maincardback"
+        android:layout_width="142dp"
+        android:layout_height="214dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginBottom="376dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linnar_cards"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/card0" />
+
+    <ImageView
+        android:id="@+id/CircleTimer"
+        android:layout_width="76dp"
+        android:layout_height="84dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/linnar_cards"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/circletime" />
+
+    <TextView
+        android:id="@+id/CircleTimerNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="5"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/CircleTimer"
+        app:layout_constraintEnd_toEndOf="@+id/CircleTimer"
+        app:layout_constraintStart_toStartOf="@+id/CircleTimer"
+        app:layout_constraintTop_toTopOf="@+id/CircleTimer" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/white"
+        android:text="@string/time_left"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/CircleTimer"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linnar_cards"
+        android:layout_width="373dp"
+        android:layout_height="388dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/card_place"
+        app:layout_constraintEnd_toEndOf="@+id/card_place"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/card_place"
+        app:layout_constraintTop_toTopOf="@+id/card_place"
+        app:layout_constraintVertical_bias="0.0">
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/totalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="24dp"
+        android:text="0"
+        android:textColor="#D11212"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bossPhoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Level:  "
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/bossPhoto"
+        android:layout_width="162dp"
+        android:layout_height="211dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toStartOf="@+id/maincardback"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:srcCompat="@drawable/boss1a" />
+
+    <ImageView
+        android:id="@+id/levelexp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bossnpc"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/s1" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/score" />
+
+    <ImageView
+        android:id="@+id/circlestartgame"
+        android:layout_width="409dp"
+        android:layout_height="381dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="76dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/maincardback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/maincardback"
+        app:layout_constraintVertical_bias="0.592"
+        app:srcCompat="@drawable/waterballon" />
+
+    <TextView
+        android:id="@+id/textstartgame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="#1930AF"
+        android:textSize="140dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/circlestartgame"
+        app:layout_constraintEnd_toEndOf="@+id/circlestartgame"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/circlestartgame"
+        app:layout_constraintTop_toTopOf="@+id/circlestartgame"
+        app:layout_constraintVertical_bias="0.425" />
+
+    <TextView
+        android:id="@+id/Explain"
+        style="bold"
+        android:layout_width="364dp"
+        android:layout_height="370dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/blue"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linnar_cards"
+        app:layout_constraintEnd_toEndOf="@+id/card_place"
+        app:layout_constraintStart_toStartOf="@+id/card_place"
+        app:layout_constraintTop_toTopOf="@+id/card_place" />
+
+    <ImageView
+        android:id="@+id/bossnpc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linnar_cards"
+        app:layout_constraintVertical_bias="0.428"
+        app:srcCompat="@drawable/shub" />
+
+    <TextView
+        android:id="@+id/matchexp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/gold"
+        android:gravity="center"
+        android:text="@string/chooce_2_match_cards"
+        android:textColor="@color/red"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

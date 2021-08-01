@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bck"
+    android:background="@drawable/road">
+
+
+    <Button
+        android:id="@+id/world1"
+        android:layout_width="38dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="1"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/world2"
+        android:layout_width="38dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="2"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/world3"
+        android:layout_width="38dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="3"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageView9"
+        android:layout_width="88dp"
+        android:layout_height="78dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="208dp"
+        android:src="@drawable/fish"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginBottom="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/shub" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="64dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/seny" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="120dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/monk" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="169dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="52dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:srcCompat="@drawable/hilfa" />
+
+    <Button
+        android:id="@+id/world4"
+        android:layout_width="38dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="4"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageView12"
+        android:layout_width="39dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ship"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageView13"
+        android:layout_width="39dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ship"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageView19"
+        android:layout_width="411dp"
+        android:layout_height="413dp"
+        android:src="@drawable/clouds"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="51dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:onClick="aboutme"
+        android:layout_width="152dp"
+        android:layout_height="178dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="34dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toBottomOf="@+id/world1"
+        android:onClick="score1"
+        app:layout_constraintStart_toEndOf="@+id/world1"
+        app:layout_constraintTop_toTopOf="@+id/world1"
+        app:srcCompat="@drawable/thropy" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="34dp"
+        android:layout_height="33dp"
+        android:onClick="score2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/world2"
+        app:layout_constraintStart_toEndOf="@+id/world2"
+        app:layout_constraintTop_toTopOf="@+id/world2"
+        app:srcCompat="@drawable/thropy" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="34dp"
+        android:layout_height="33dp"
+        android:onClick="score3"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/world3"
+        app:layout_constraintStart_toEndOf="@+id/world3"
+        app:layout_constraintTop_toTopOf="@+id/world3"
+        app:srcCompat="@drawable/thropy" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="34dp"
+        android:layout_height="33dp"
+        android:onClick="score4"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/world4"
+        app:layout_constraintStart_toEndOf="@+id/world4"
+        app:layout_constraintTop_toTopOf="@+id/world4"
+        app:srcCompat="@drawable/thropy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

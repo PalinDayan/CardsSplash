@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/diffrent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/show"
+    tools:context=".diffrent">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/s7" />
+
+    <ImageView
+        android:id="@+id/card2"
+        android:layout_width="154dp"
+        android:layout_height="286dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="48dp"
+        android:onClick="startfind"
+        app:layout_constraintEnd_toStartOf="@+id/card1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/card4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/cardstart1" />
+
+    <ImageView
+        android:id="@+id/card1"
+        android:layout_width="154dp"
+        android:layout_height="286dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="startfind"
+        app:layout_constraintEnd_toEndOf="@+id/card3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/card3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/cardstart1" />
+
+    <ImageView
+        android:id="@+id/card3"
+        android:layout_width="154dp"
+        android:layout_height="286dp"
+        android:layout_marginStart="48dp"
+        android:onClick="startfind"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/card4"
+        app:layout_constraintTop_toBottomOf="@+id/card1"
+        app:srcCompat="@drawable/cardstart1" />
+
+    <ImageView
+        android:id="@+id/card4"
+        android:layout_width="154dp"
+        android:layout_height="286dp"
+        android:layout_marginStart="16dp"
+        android:onClick="startfind"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card2"
+        app:srcCompat="@drawable/cardstart1" />
+
+    <ImageView
+        android:id="@+id/npc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/shub" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/difrent"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/npc"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/endphoto"
+        android:layout_width="366dp"
+        android:layout_height="408dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/boss1end"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/youwon"
+        android:layout_width="334dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="@string/wonnextworld"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endphoto"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/nextworld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@color/white"
+        android:onClick="world"
+        android:text="@string/next_world"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/youwon"
+        tools:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
